@@ -1,4 +1,5 @@
 # DollyRobot
+A stable pluggable Telegram userbot, based on Telethon.
 <p align="center">
     <a href="https://github.com/noob-angad/DollyRobot/stargazers"><img src="https://img.shields.io/github/stars/noob-angad/DollyRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
