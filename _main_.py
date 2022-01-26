@@ -1,4 +1,3 @@
-
 import time, re
 from sys import argv
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
@@ -10,14 +9,14 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown
-from Dolly.Handlers.validation import is_user_admin
+from Yone.Handlers.validation import is_user_admin
 
 from telegram.error import (
     BadRequest,
     Unauthorized,
 )
 
-from Yone import (
+from Dolly import (
     OWNER_ID,
     dispatcher, 
     StartTime,
@@ -31,7 +30,7 @@ from Yone import (
     telethn,
     updater)
 
-from Yone.Plugins import ALL_MODULES
+from Dolly.Plugins import ALL_MODULES
 from Dolly.__help__ import (
 get_help, 
 help_button, 
@@ -96,7 +95,7 @@ Add me in your groups and give me full rights to make me function well.
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url="t.me/Dolly_Robot?startgroup=true"),
+            text="➕️ Add me to your chat ➕️", url="t.me/dolly_Robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Admin", callback_data="admin_back"),
@@ -107,7 +106,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Tools", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Bot Info", callback_data="dolly_"
+            text="Bot Info", callback_data="yone_"
         ),
     ],
     [
@@ -191,9 +190,9 @@ def start(update: Update, context: CallbackContext):
 def dolly_about_callback(update: Update, context: CallbackContext):
     first_name = update.effective_user.first_name
     query = update.callback_query
-    if query.data == "yone_":
+    if query.data == "dolly_":
         query.message.edit_text(
-            text=""" ℹ️ ɪ'ᴍ *ᴅᴏʟʟʏ*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
+            text=""" ℹ️ ɪ'ᴍ *𝙳𝙾𝙻𝙻𝚈*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
                  \n• ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.
                  \n• ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.
                  \n• ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.
