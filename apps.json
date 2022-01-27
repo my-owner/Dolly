@@ -1,14 +1,14 @@
 {
-    "name": "DollyRobot",
+    "name": "YoneRobot",
     "description": "Telegram group management bot.",
     "keywords": [
        "telegram",
        "anime",
        "group",
        "manager",
-       "Dolly"
+       "yone"
     ],   
- "repository": "https://github.com/noob-angad/DollyRobot",
+ "repository": "https://github.com/noob-kittu/YoneRobot",
  "addons": [
     {
        "options": {
@@ -18,11 +18,11 @@
     }
  ],
  "buildpacks": [
-     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
     }
   ],
  "env": {
@@ -34,12 +34,12 @@
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "1643520"
+       "value": "3160248"
     },
     "API_HASH": {
        "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "9a6cd963e2d1816e3a3fc51776606e72"
+       "value": "da866bcad3446898c4d4a20fa10b9d09"
     },    
     "SQLALCHEMY_DATABASE_URI": {
        "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -49,7 +49,7 @@
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": "2044993686"
+       "value": "1697409878"
     },
 
     "BOT_NAME": {
@@ -59,12 +59,12 @@
     },
     "OWNER_USERNAME": {
        "description": "Your username without the @",
-       "value": "crazypagal_01"
+       "value": "kumjojass"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
        "required": true,
-       "value": "bigfan2"
+       "value": "league_of_bots"
     },      
     "DEV_USERS": {
        "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
