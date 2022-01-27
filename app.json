@@ -34,12 +34,12 @@
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "1643520"
+       "value": ""
     },
     "API_HASH": {
        "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "9a6cd963e2d1816e3a3fc51776606e72"
+       "value": ""
     },    
     "SQLALCHEMY_DATABASE_URI": {
        "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -49,7 +49,7 @@
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": "2044993686"
+       "value": ""
     },
 
     "BOT_NAME": {
